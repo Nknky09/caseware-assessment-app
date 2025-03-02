@@ -1,1 +1,10 @@
-<p>product-detail works!</p>
+<div *ngIf="product; else noProduct">
+  <h1>{{ product.name }}</h1>
+  <p>{{ product.description }}</p>
+  <p><strong>Price: </strong> {{ product.price | currency }}</p>
+  <button (click)="navigateBack()">Back To All Products</button>
+</div>
+
+<ng-template #noProduct>
+  <p>Product not found</p>
+</ng-template>
