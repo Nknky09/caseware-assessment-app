@@ -1,1 +1,9 @@
-<p>product-list works!</p>
+<h1>Caseware Technical Assessment | Product App</h1>
+<div class="product-list">
+  <app-product-card
+    *ngFor="let product of products"
+    [product]="product"
+    (productClicked)="onProductSelected($event)"
+  >
+  </app-product-card>
+</div>
