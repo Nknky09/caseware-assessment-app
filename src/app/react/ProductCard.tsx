@@ -17,7 +17,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   onViewDetails,
 }) => {
   return (
-    <div className="border border-gray-300 p-4 m-4 rounded shadow-md hover:shadow-lg transition-all duration-200 w-full sm:w-1/2 md:w-1/3">
+    <div className="border border-gray-300 p-4 m-4 rounded shadow-md hover:shadow-lg transition-all duration-200 w-full sm:w-1/3 md:w-1/4">
       <h2 className="text-xl font-semibold mb-2">{product.name}</h2>
       <p className="text-gray-600 mb-2">{product.description}</p>
       <p className="font-bold text-lg mb-4">

@@ -1,59 +1,51 @@
 # CasewareAssessmentApp
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.0.
+Technical Assessment evaluation for Caseware Software Engineer position.
 
-## Development server
+## To run the App
 
-To start a local development server, run:
+Install all packages from dependencies
+
+```bash
+npm install
+```
+
+Run the local dev
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+`http://localhost:4200/`
 
-## Code scaffolding
+## Assessment using Angular
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+`http://localhost:4200/` is defaulted to load the Angular App with requested directions for the assessment
 
-```bash
-ng generate component component-name
-```
+## Assessment using React
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Recreated the app with React, wanted to keep the Angular App in place just in case.
+Can be accessed from - `http://localhost:4200/react`
 
-```bash
-ng generate --help
-```
+## Instructions of Requirements for the Assessment
 
-## Building
+Objective: The goal of this assessment is to evaluate your Angular skills, including component-based architecture, services, routing, and basic API integration.
+Duration: 2-3 Hours
 
-To build the project run:
+1. Project Setup (10 points)
 
-```bash
-ng build
-```
+Create a new Angular project using Angular CLI (ng new product-app).
+Set up a clean folder structure following best practices.
+Initialize a Git repository and make an initial commit. 2. Component & Data Binding (30 points)
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Create a ProductCardComponent that displays product details (name, price, description).
+Accept a product object via @Input().
+Add a button that emits an event (@Output()) when clicked. 3. Service & Data Handling (30 points)
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Create a ProductService that provides product data (hardcoded or from a mock JSON file).
+Fetch and display products in a ProductListComponent.
+Use Observable (RxJS) in ProductService for asynchronous data fetching. 4. Routing & Navigation (30 points)
+Set up Angular routing with the following paths:
+/products → Displays ProductListComponent.
+/products/:id → Displays ProductDetailComponent.
+Clicking a product in ProductListComponent should navigate to /products/:id and display its details.

@@ -22,25 +22,35 @@ export const ProductDetail: React.FC = () => {
 
   if (!product) {
     return (
-      <div style={{ padding: "1rem" }}>
-        <h2>Product does not exist</h2>
-        <button onClick={handleBack}>Back to All Products</button>
+      <div className="p-4 mt-10 ml-10">
+        <h2 className="text-2xl font-semibold mb-4">Product does not exist</h2>
+        <button
+          className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+          onClick={handleBack}
+        >
+          Back to All Products
+        </button>
       </div>
     );
   }
 
   return (
-    <div style={{ padding: "1rem" }}>
-      <h1>{product.name}</h1>
-      <p>{product.description}</p>
-      <p>
+    <div className="p-4 mt-10 ml-10">
+      <h1 className="text-3xl font-bold mb-4">{product.name}</h1>
+      <p className="text-gray-700 mb-4">{product.description}</p>
+      <p className="text-xl font-semibold mb-4">
         <strong>Price:</strong>{" "}
         {product.price.toLocaleString("en-US", {
           style: "currency",
           currency: "USD",
         })}
       </p>
-      <button onClick={handleBack}>Back to All Products</button>
+      <button
+        className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+        onClick={handleBack}
+      >
+        Back to All Products
+      </button>
     </div>
   );
 };

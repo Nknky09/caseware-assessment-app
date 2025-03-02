@@ -21,16 +21,11 @@ export const ProductList: React.FC = () => {
   };
 
   return (
-    <div style={{ padding: "1rem" }}>
-      <h1>Caseware Assessment - React Version</h1>
-      <div
-        className="product-list"
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          justifyContent: "space-around",
-        }}
-      >
+    <div className="p-4">
+      <h1 className="text-4xl font-bold dark:text-white mt-10 text-center">
+        Caseware Assessment - React Version
+      </h1>
+      <div className="flex flex-wrap justify-around mt-10">
         {products.map((product) => (
           <ProductCard
             key={product.id}
