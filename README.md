@@ -4,7 +4,9 @@ Submission of the Technical Assessment Evaluation for the Caseware Software Engi
 
 ## To run the App
 
-Install all packages from dependencies
+Using Angular v19.2.1
+
+Install packages from dependencies
 
 ```bash
 npm install
