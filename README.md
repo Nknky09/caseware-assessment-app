@@ -1,6 +1,6 @@
 # CasewareAssessmentApp
 
-Technical Assessment evaluation for Caseware Software Engineer position.
+Submission of the Technical Assessment Evaluation for the Caseware Software Engineer position.
 
 ## To run the App
 
@@ -36,15 +36,22 @@ Duration: 2-3 Hours
 
 Create a new Angular project using Angular CLI (ng new product-app).
 Set up a clean folder structure following best practices.
-Initialize a Git repository and make an initial commit. 2. Component & Data Binding (30 points)
+Initialize a Git repository and make an initial commit.
+
+2. Component & Data Binding (30 points)
 
 Create a ProductCardComponent that displays product details (name, price, description).
 Accept a product object via @Input().
-Add a button that emits an event (@Output()) when clicked. 3. Service & Data Handling (30 points)
+Add a button that emits an event (@Output()) when clicked.
+
+3. Service & Data Handling (30 points)
 
 Create a ProductService that provides product data (hardcoded or from a mock JSON file).
 Fetch and display products in a ProductListComponent.
-Use Observable (RxJS) in ProductService for asynchronous data fetching. 4. Routing & Navigation (30 points)
+Use Observable (RxJS) in ProductService for asynchronous data fetching.
+
+4. Routing & Navigation (30 points)
+
 Set up Angular routing with the following paths:
 /products → Displays ProductListComponent.
 /products/:id → Displays ProductDetailComponent.
