@@ -28,4 +28,8 @@ export class ProductListComponent implements OnInit {
   onProductSelected(product: Product): void {
     this.router.navigate(['/products', product.id]);
   }
+
+  navigateToReact(): void {
+    this.router.navigate(['/react']);
+  }
 }
